@@ -2,17 +2,17 @@ import { Routes } from '@/config/routes';
 import { PaymentGateway } from '@/types';
 
 export const siteSettings = {
-  name: 'PickBazar',
-  description: '',
+  name: 'Blooming Tales',
+  description: 'Blooming Tales - The flower shop',
   logo: {
     url: '/logo.svg',
-    alt: 'PickBazar',
+    alt: 'Blooming Tales',
     href: '/grocery',
     width: 128,
     height: 40,
   },
   defaultLanguage: 'en',
-  currencyCode: 'USD',
+  currencyCode: 'EUR',
   product: {
     placeholderImage: '/product-placeholder.svg',
     cardMaps: {

@@ -13,12 +13,11 @@ module.exports = {
   i18n,
   images: {
     domains: [
+      'gitlab.com',
       'pickbazarlaravel.s3.ap-southeast-1.amazonaws.com',
-      'pixarlaravel.s3.ap-southeast-1.amazonaws.com',
       'lh3.googleusercontent.com',
       'localhost',
       '127.0.0.1',
-      'i.pravatar.cc',
     ],
   },
   ...(process.env.FRAMEWORK_PROVIDER === 'graphql' && {

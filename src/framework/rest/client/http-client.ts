@@ -18,7 +18,7 @@ Axios.interceptors.request.use((config) => {
   //@ts-ignore
   config.headers = {
     ...config.headers,
-    Authorization: `Bearer ${token ? token : ''}`,
+    Authorization: `Bearer ${token ?? ''}`,
   };
   return config;
 });

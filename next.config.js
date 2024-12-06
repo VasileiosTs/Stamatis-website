@@ -1,23 +1,17 @@
 /** @type {import('next').NextConfig} */
 const { i18n } = require('./next-i18next.config');
 
-// const runtimeCaching = require('next-pwa/cache');
-// const withPWA = require('next-pwa')({
-//   disable: process.env.NODE_ENV === 'development',
-//   dest: 'public',
-//   runtimeCaching,
-// });
-
 module.exports = {
   reactStrictMode: true,
   i18n,
   images: {
     domains: [
-      'gitlab.com',
       'pickbazarlaravel.s3.ap-southeast-1.amazonaws.com',
       'lh3.googleusercontent.com',
       'localhost',
       '127.0.0.1',
+      '188.166.27.17',
+      '188.166.27.17:5000',
     ],
   },
   ...(process.env.FRAMEWORK_PROVIDER === 'graphql' && {

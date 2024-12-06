@@ -7,6 +7,7 @@ module.exports = {
   images: {
     domains: [
       'pickbazarlaravel.s3.ap-southeast-1.amazonaws.com',
+      'bloomin-tales-2j9n3rn31-stpaulis-projects.vercel.app',
       'lh3.googleusercontent.com',
       'localhost',
       '127.0.0.1',

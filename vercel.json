@@ -1,9 +1,9 @@
 {
   "env": {
     "APPLICATION_MODE": "production",
-    "NEXTAUTH_URL": "https://bloomin-tales-8ta6eo67w-stpaulis-projects.vercel.app",
     "FRAMEWORK_PROVIDER": "rest",
-    "NEXT_PUBLIC_REST_API_ENDPOINT": "http://188.166.27.17:5000/api",
+    "NEXTAUTH_URL": "https://exact-hyena-factual.ngrok-free.apps",
+    "NEXT_PUBLIC_REST_API_ENDPOINT": "https://exact-hyena-factual.ngrok-free.app/api",
     "NEXT_PUBLIC_SITE_URL": "https://bloomin-tales-8ta6eo67w-stpaulis-projects.vercel.app",
     "NEXT_PUBLIC_ENABLE_MULTI_LANG": "false",
     "NEXT_PUBLIC_DEFAULT_LANGUAGE": "en",
@@ -22,9 +22,9 @@
   "build": {
     "env": {
       "APPLICATION_MODE": "production",
-      "NEXTAUTH_URL": "https://bloomin-tales-8ta6eo67w-stpaulis-projects.vercel.app",
       "FRAMEWORK_PROVIDER": "rest",
-      "NEXT_PUBLIC_REST_API_ENDPOINT": "http://188.166.27.17:5000/api",
+      "NEXTAUTH_URL": "https://exact-hyena-factual.ngrok-free.app",
+      "NEXT_PUBLIC_REST_API_ENDPOINT": "https://exact-hyena-factual.ngrok-free.app/api",
       "NEXT_PUBLIC_SITE_URL": "https://bloomin-tales-8ta6eo67w-stpaulis-projects.vercel.app",
       "NEXT_PUBLIC_ENABLE_MULTI_LANG": "false",
       "NEXT_PUBLIC_DEFAULT_LANGUAGE": "en",

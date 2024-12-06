@@ -10,8 +10,7 @@ module.exports = {
       'lh3.googleusercontent.com',
       'localhost',
       '127.0.0.1',
-      '188.166.27.17',
-      '188.166.27.17:5000',
+      'exact-hyena-factual.ngrok-free.app',
     ],
   },
   ...(process.env.FRAMEWORK_PROVIDER === 'graphql' && {

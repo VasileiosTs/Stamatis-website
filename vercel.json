@@ -1,9 +1,9 @@
 {
   "env": {
     "FRAMEWORK_PROVIDER": "rest",
-    "NEXT_PUBLIC_REST_API_ENDPOINT": "",
+    "NEXT_PUBLIC_REST_API_ENDPOINT":"http://188.166.27.17:5000/api",
+    "NEXT_PUBLIC_SITE_URL": "https://bloomin-tales-8ta6eo67w-stpaulis-projects.vercel.app",
     "NEXT_PUBLIC_GRAPHQL_API_ENDPOINT": "",
-    "NEXT_PUBLIC_SITE_URL": "",
     "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "",
     "NEXT_PUBLIC_PAYPAL_CLIENT_TOKEN": "",
     "NEXT_PUBLIC_RAZORPAY_KEY": "",
@@ -22,9 +22,9 @@
   "build": {
     "env": {
       "FRAMEWORK_PROVIDER": "rest",
-      "NEXT_PUBLIC_REST_API_ENDPOINT": "",
+      "NEXT_PUBLIC_REST_API_ENDPOINT": "http://188.166.27.17:5000/api",
+      "NEXT_PUBLIC_SITE_URL": "https://bloomin-tales-8ta6eo67w-stpaulis-projects.vercel.app",
       "NEXT_PUBLIC_GRAPHQL_API_ENDPOINT": "",
-      "NEXT_PUBLIC_SITE_URL": "",
       "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "",
       "NEXT_PUBLIC_PAYPAL_CLIENT_TOKEN": "",
       "NEXT_PUBLIC_RAZORPAY_KEY": "",

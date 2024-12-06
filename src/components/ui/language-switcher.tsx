@@ -38,7 +38,7 @@ export default function LanguageSwitcher() {
             <span className="relative block h-7 w-7 overflow-hidden rounded-full">
               {/* <span className="relative block w-8 h-8 overflow-hidden rounded-full 2xl:hidden"> */}
               <span className="relative top-0 block">
-                {selectedItem.iconMobile}
+                {selectedItem?.iconMobile}
               </span>
             </span>
             {/* <span className="items-center hidden truncate 2xl:flex">

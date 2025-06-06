@@ -1,13 +1,14 @@
+
 import { Routes } from '@/config/routes';
 import { PaymentGateway } from '@/types';
 
 export const siteSettings = {
   name: 'Blooming Tales',
-  description: 'Blooming Tales - The flower shop',
+  description: 'Your premier destination for plants and flowers with fast delivery',
   logo: {
     url: '/logo.svg',
     alt: 'Blooming Tales',
-    href: '/grocery',
+    href: '/',
     width: 128,
     height: 40,
   },
@@ -15,14 +16,9 @@ export const siteSettings = {
   currencyCode: 'EUR',
   product: {
     placeholderImage: '/product-placeholder.svg',
+    // Focus only on grocery theme for plant marketplace
     cardMaps: {
-      grocery: 'Krypton',
-      furniture: 'Radon',
-      bag: 'Oganesson',
-      makeup: 'Neon',
-      book: 'Xenon',
-      medicine: 'Helium',
-      default: 'Argon',
+      default: 'Krypton', // Use Krypton cards for all products
     },
   },
   authorizedLinks: [
@@ -78,7 +74,6 @@ export const siteSettings = {
     {
       href: Routes.cards,
       label: 'profile-sidebar-my-cards',
-      // MultiPayment: Make it dynamic or from mapper
       cardsPayment: [PaymentGateway.STRIPE],
     },
     {
@@ -90,59 +85,32 @@ export const siteSettings = {
       label: 'profile-sidebar-logout',
     },
   ],
-  sellingAdvertisement: {
-    image: {
-      src: '/selling.png',
-      alt: 'Selling Advertisement',
-    },
-  },
-  cta: {
-    mockup_img_src: '/mockup-img.png',
-    play_store_link: '/',
-    app_store_link: '/',
-  },
   headerLinks: [
     { href: Routes.shops, icon: null, label: 'nav-menu-shops' },
     { href: Routes.coupons, icon: null, label: 'nav-menu-offer' },
     { href: Routes.contactUs, label: 'nav-menu-contact' },
-    { href: Routes.flashSale, label: 'nav-menu-flash-sale' },
-    { href: Routes.manufacturers, label: 'text-manufacturers' },
-    { href: Routes.authors, label: 'text-authors' },
     { href: Routes.help, label: 'nav-menu-faq' },
-    { href: Routes.terms, label: 'nav-menu-terms' },
-    { href: Routes.customerRefundPolicies, label: 'nav-menu-refund-policy' },
-    {
-      href: Routes.vendorRefundPolicies,
-      label: 'nav-menu-vendor-refund-policy',
-    },
   ],
   footer: {
-    // copyright: {
-    //   name: 'RedQ, Inc',
-    //   href: 'https://redq.io/',
-    // },
-    // address: '2429 River Drive, Suite 35 Cottonhall, CA 2296 United Kingdom',
-    // email: 'dummy@dummy.com',
-    // phone: '+1 256-698-0694',
     menus: [
       {
         title: 'text-explore',
         links: [
           {
-            name: 'Shops',
+            name: 'Plant Shops',
             href: Routes.shops,
           },
           {
-            name: 'Authors',
-            href: Routes.authors,
+            name: 'Indoor Plants',
+            href: '/products?category=indoor-plants',
           },
           {
-            name: 'Flash Deals',
-            href: Routes?.flashSale,
+            name: 'Outdoor Plants',
+            href: '/products?category=outdoor-plants',
           },
           {
-            name: 'Coupon',
-            href: Routes.coupons,
+            name: 'Flowers',
+            href: '/products?category=flowers',
           },
         ],
       },
@@ -154,12 +122,12 @@ export const siteSettings = {
             href: Routes.help,
           },
           {
-            name: 'Vendor Refund Policies',
-            href: Routes.vendorRefundPolicies,
+            name: 'Plant Care Guide',
+            href: '/plant-care',
           },
           {
-            name: 'Customer Refund Policies',
-            href: Routes.customerRefundPolicies,
+            name: 'Delivery Information',
+            href: '/delivery-info',
           },
         ],
       },
@@ -167,8 +135,8 @@ export const siteSettings = {
         title: 'text-our-information',
         links: [
           {
-            name: 'Manufacturers',
-            href: Routes?.manufacturers,
+            name: 'About Us',
+            href: '/about',
           },
           {
             name: 'Privacy policies',
@@ -185,27 +153,5 @@ export const siteSettings = {
         ],
       },
     ],
-    // payment_methods: [
-    //   {
-    //     img: '/payment/master.png',
-    //     url: '/',
-    //   },
-    //   {
-    //     img: '/payment/skrill.png',
-    //     url: '/',
-    //   },
-    //   {
-    //     img: '/payment/paypal.png',
-    //     url: '/',
-    //   },
-    //   {
-    //     img: '/payment/visa.png',
-    //     url: '/',
-    //   },
-    //   {
-    //     img: '/payment/discover.png',
-    //     url: '/',
-    //   },
-    // ],
   },
 };

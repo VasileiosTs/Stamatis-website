@@ -1,3 +1,4 @@
+
 export const Routes = {
   home: '/',
   checkout: '/checkout',
@@ -15,12 +16,7 @@ export const Routes = {
   coupons: '/offers',
   orderReceived: '/order-received',
   products: '/products',
-  product: (slug: string) => {
-    // if (asPath) {
-    //   return `/products/${encodeURIComponent(slug)}?type=${asPath}`;
-    // }
-    return `/products/${encodeURIComponent(slug)}`;
-  },
+  product: (slug: string) => `/products/${encodeURIComponent(slug)}`,
   privacy: '/privacy',
   terms: '/terms',
   refundPolicies: '/refund-policies',
@@ -36,9 +32,7 @@ export const Routes = {
   manufacturers: '/manufacturers',
   manufacturer: (slug: string) => `/manufacturers/${encodeURIComponent(slug)}`,
   nearByShop: ({ lat, lng }: { lat: string; lng: string }) =>
-    `/shops/search?lat=${encodeURIComponent(lat)}&lng=${encodeURIComponent(
-      lng,
-    )}`,
+    `/shops/search?lat=${encodeURIComponent(lat)}&lng=${encodeURIComponent(lng)}`,
   search: '/search',
   wishlists: '/wishlists',
   questions: '/questions',
